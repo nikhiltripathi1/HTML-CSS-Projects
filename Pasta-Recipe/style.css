@@ -1,0 +1,151 @@
+body{
+    background-color: tan;
+    margin: 0px;
+}
+.navbar{
+    display: block;
+    background-color: brown;
+    color: wheat;
+    height: 10vh;
+    width: 100%;
+    margin-top: 0px;
+    position: sticky;
+    top:0px;
+}
+.navbar h1{
+    float: left;
+    margin: 0px 10px;
+    padding: 0;
+    top:30%;
+    position: relative;
+}
+.navbar ul{
+    float: right;
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    top:40%;
+    position: relative;
+}
+.navbar ul li{
+    margin: 0px 10px;
+}
+.navbar li a{
+    text-decoration: none;
+    color:white;
+}
+.navbar ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+header{
+    text-align: center;
+    padding: 1% 20%;
+    font-size: 100%;
+}
+header p img{
+    padding: 2%;
+    height: 350px;
+    width: 350px;
+}
+.para>span{
+    font-style: italic;   
+   }
+.para>span:last-child{
+    text-decoration: underline;
+}
+.first{
+    font-style: normal;
+    color: red;
+}
+.unorder-list>li{
+    list-style-image: url("bullet.png");
+    font-size: 20px;
+}
+
+.heading{
+    padding: 0px 0px 10px ;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px 20px;
+}
+.prep-info{
+    width: 500px;
+}
+.prep-method{
+    width: 700px;
+}
+footer{
+    background-color: brown;
+    font-size: 20px;
+    color: wheat;
+    text-align: center;
+    padding: 0px 20%;
+    margin-bottom: 0;
+}
+footer>.unorder-list{
+    padding-left: 0;
+}
+footer>.unorder-list>li{
+    list-style: none;
+}
+footer ul li a{
+    color: rgb(70, 253, 226);
+    font-size: 20px;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: yellow;
+}
+@media screen and (max-width: 400px) {
+    .navbar{
+        background-color: brown;
+        height: 20vh;
+    }
+    .navbar h1{
+        margin-left: 40px;
+    }
+    .navbar ul{
+        padding: 0px;
+        margin-right: 20px;
+    }
+    header p img{
+        padding: 0%;
+        margin: 0%;
+        height: 200px;
+        width: 200px;
+    }
+  }
+@media screen and (min-width: 401px) and (max-width: 750px) {
+    body{
+        background-color: rgb(209, 206, 0);
+    }
+    .navbar{
+        background-color: brown;
+        height: 12vh;
+    }
+    .navbar h1{
+        margin-left: 40px;
+    }
+    .navbar ul{
+        padding: 0px;
+        margin-right: 20px;
+    }
+    header p img{
+        padding: 0%;
+        margin: 0%;
+        height: 250px;
+        width: 250px;
+    }
+  }
+
+@media screen and (min-width: 751px) {
+    body{
+        background-color: darkkhaki;
+    }
+    footer ul li a{
+        font-size: 20px;
+    }
+}
